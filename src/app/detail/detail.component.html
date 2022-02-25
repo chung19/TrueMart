@@ -1,0 +1,33 @@
+
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-danger text-center">THÔNG TIN CHI TIẾT SẢN PHẨM</h1>
+      </div>
+      <div class="col-md-4">
+        <a [routerLink]="['detail/:masp', products.masp]" routerLinkActive='active'> <img class='img-fluid' src="{{products.hinhanh}}" alt=""> </a>
+      </div>
+      <div class="col-md-8 p-4 d-flex flex-column justify-content-start">
+        <h3 class="text-center text-success">{{ products.tenmh }}</h3>
+  <div class="d-flex align-items-center">
+          <h3 class="text-primary mx-2">Mã sản phẩm :</h3>
+          <h3 class="text-info">{{ products.masp }}</h3>
+        </div>
+  <div class="d-flex align-items-center">
+          <h3 class="text-primary mx-2">Giá sản phẩm :</h3>
+          <h3 class="text-info">{{ products.dongia }}</h3>
+        </div>
+  <div class="d-flex align-items-center">
+          <h3 class="text-primary mx-2">Số luợng :</h3>
+          <h3 class="text-info">{{ products.soluong }}</h3>
+        </div>
+        <div class="d-flex align-items-center">
+          <h3 class="text-primary mx-2">Chi tiết:</h3>
+          <h3 class="text-info">{{ products.mota }}</h3>
+        </div>
+      </div>
+    </div>
+
+
+  

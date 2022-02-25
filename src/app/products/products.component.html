@@ -1,0 +1,28 @@
+<!--background bd-->
+
+
+<!--bg kt-->
+<table class="table" style="background-color: rgb(193, 240, 240);">
+<thead class="bg-info">
+<tr>
+    <th scope='col'>Mã mặt hàng</th>
+      <th scope='col'>Tên mặt hàng</th>
+      <th scope='col'>Số lượng</th>
+      <th scope='col'>Đơn giá</th>
+      <th scope='col'>hình ảnh</th>
+      <th scope='col'>Mô tả</th>
+</tr>
+</thead>
+<tbody>
+    <tr class="text-dark" *ngFor="let item of datas">
+        <td>{{item.masp}}</td>
+        <td>{{item.tenmh}}</td>
+        <td>{{item.soluong}}</td>
+        <td>{{item.dongia}}</td>
+        <td style="width: 180px; height: 180px;"> <a [routerLink]="['/products', item.masp]" routerLinkActive='active'> <img class='img-fluid' src="{{item.hinhanh}}" alt=""> </a></td>
+        <td>{{item.mota}}</td>
+        
+    
+</tr>
+</tbody>
+</table>
